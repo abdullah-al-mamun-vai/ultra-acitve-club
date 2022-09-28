@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Task from '../../Task/Task';
 // import data from '../../../public/data.json';
 
 const Tasks = () => {
@@ -10,10 +11,8 @@ const Tasks = () => {
     }, [])
 
     return (
-        <div>
-            {
-                // console.log(['taks'])
-            }
+        <div className=' grid grid-cols-3'>
+
         </div>
     );
 };

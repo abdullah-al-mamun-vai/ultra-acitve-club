@@ -10,7 +10,7 @@ const Homesection = () => {
                         <img src="" alt="" />
                         <h2 className='capitalize'>daily task</h2>
                     </div>
-                    <div className=" grid grid-cols-3">
+                    <div className="">
                         <Tasks></Tasks>
                     </div>
                 </div>
