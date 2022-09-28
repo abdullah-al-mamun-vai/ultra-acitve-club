@@ -2,49 +2,49 @@
   {
     "id": "6334718f44931a69f254c7cb",
     "picture": "https://i.ibb.co/k5FyK9c/pexels-cottonbro-3201587.jpg",
-    "age": 40,
+    "time": 40,
     "title": "play",
     "button": "add to cart"
   },
   {
     "id": "6334718f9e0237fef928ad44",
     "picture": "https://i.ibb.co/FK97nNG/pexels-thisisengineering-3861958.jpg",
-    "age": 20,
+    "time": 20,
     "title": "Patsy Bright",
     "button": "add to cart"
   },
   {
     "id": "6334718fb1c8ddbf7b124748",
     "picture": "https://i.ibb.co/gdmK9ZD/pexels-cottonbro-4325466.jpg",
-    "age": 28,
+    "time": 28,
     "title": "Dixon Lucas",
     "button": "add to cart"
   },
   {
     "id": "6334718f3f0c66f92b4d81aa",
     "picture": "https://i.ibb.co/pwdKWYQ/pexels-thisisengineering-3861959.jpg",
-    "age": 24,
+    "time": 24,
     "title": "Gilbert Mercado",
     "button": "add to cart"
   },
   {
     "id": "6334718fed3a45262ea712fa",
     "picture": "https://i.ibb.co/ctPqqvm/pexels-hasan-albari-1229861-2.jpg",
-    "age": 35,
+    "time": 35,
     "title": "Wilson Delacruz",
     "button": "add to cart"
   },
   {
     "id": "6334718f92c5abaa84d35b38",
     "picture": "https://i.ibb.co/R4rQZhS/pexels-pixabay-270348.jpg",
-    "age": 40,
+    "time": 40,
     "title": "Walters Robbins",
     "button": "add to cart"
   },
   {
     "id": "6334718fb8bf33f1920610bd",
     "picture": "https://i.ibb.co/FK97nNG/pexels-thisisengineering-3861958.jpg",
-    "age": 21,
+    "time": 21,
     "title": "Renee Mcclain",
     "button": "add to cart"
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Intro = () => {
+const Intro = ({ cart }) => {
     return (
         <div className='sticky top-0 mx-2'>
             <div>
@@ -37,7 +37,7 @@ const Intro = () => {
                 <h2 className='capitalize text-xl font-bold mx-4 my-8'>exercise details</h2>
                 <div className='flex justify-evenly bg-amber-100 py-4 mt-8'>
                     <h3 className='text-lg font-semibold capitalize'>exercise time</h3>
-                    <p className='text-slate-600'>200s</p>
+                    <p className='text-slate-600'>{cart}</p>
                 </div>
                 <div className='flex justify-evenly bg-amber-100 py-4'>
                     <h3 className='text-lg font-semibold capitalize'>break time</h3>

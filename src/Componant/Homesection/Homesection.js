@@ -3,7 +3,8 @@ import Intro from '../Intro/Intro';
 import Tasks from '../Tasks/Tasks';
 
 const Homesection = () => {
-    const [cart, setCart] = useState({});
+    const [cart, setCart] = useState(0);
+
     console.log(cart)
     return (
         <div>
@@ -14,11 +15,11 @@ const Homesection = () => {
                         <h2 className='capitalize'>daily task</h2>
                     </div>
                     <div className="">
-                        <Tasks click={setCart}></Tasks>
+                        <Tasks click={setCart} cart={cart}></Tasks>
                     </div>
                 </div>
                 <div className='shadow-2xl shadow-stone-500'>
-                    <Intro></Intro>
+                    <Intro cart={cart}></Intro>
                 </div>
 
             </div>
