@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Intro from '../Intro/Intro';
 import Tasks from '../Tasks/Tasks';
 
 const Homesection = () => {
+    const [cart, setCart] = useState({});
+    console.log(cart)
     return (
         <div>
             <div className="grid grid-cols-5 md:grid-cols-4  sm:grid-cols-1">
@@ -12,7 +14,7 @@ const Homesection = () => {
                         <h2 className='capitalize'>daily task</h2>
                     </div>
                     <div className="">
-                        <Tasks></Tasks>
+                        <Tasks click={setCart}></Tasks>
                     </div>
                 </div>
                 <div className='shadow-2xl shadow-stone-500'>

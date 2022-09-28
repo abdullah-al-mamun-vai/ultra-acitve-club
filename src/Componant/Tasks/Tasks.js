@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Task from '../../Task/Task';
 
-const Tasks = () => {
+const Tasks = ({ click }) => {
     const [tasks, setTasks] = useState([]);
     useEffect(() => {
         fetch('data.json')
@@ -11,7 +11,7 @@ const Tasks = () => {
 
     return (
         <div className=' grid grid-cols-3 gap-3 md:grid-cols-2 sm:grid-cols-1'>
-            {tasks.map(task => <Task task={task} key={task.id}></Task>)}
+            {tasks.map(task => <Task task={task} key={task.id} setCart={click} ></Task>)}
         </div>
     );
 };
