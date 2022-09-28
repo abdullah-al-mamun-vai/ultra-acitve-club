@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
 
 const Intro = ({ cart }) => {
-    const [relax, setRelax] = useState(0);
+    let [relax, setRelax] = useState(0);
     const handleBreak = (second) => {
         setRelax(second);
+        // const getItem = localStorage.getItem('break');
     }
 
+    if (relax) {
+        localStorage.setItem('break', relax)
+
+    }
+    relax = localStorage.getItem('break');
     // setGet(getItem)
 
     return (
@@ -48,7 +54,7 @@ const Intro = ({ cart }) => {
                 </div>
                 <div className='flex justify-evenly bg-amber-100 py-4'>
                     <h3 className='text-lg font-semibold capitalize'>break time</h3>
-                    <p className='text-slate-600'>{getItem}s</p>
+                    <p className='text-slate-600'>{relax}s</p>
                 </div>
             </div>
             <button className='btn w-full bg-green-500 my-8'>activity complete</button>
