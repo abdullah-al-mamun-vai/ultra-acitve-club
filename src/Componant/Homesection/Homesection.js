@@ -11,9 +11,9 @@ const Homesection = () => {
         <div>
             <div className="grid lg:grid-cols-5 md:grid-cols-3  sm:grid-cols-1">
                 <div className="lg:col-span-4 pt-16 lg:px-16 md:px-8 sm:px6 md:col-span-2 sm:col-span-1">
-                    <div className='my-6'>
-                        <img src="" alt="" />
-                        <h2 className='capitalize text-center font-bold'>daily task</h2>
+                    <div className='my-6 flex justify-center items-center'>
+                        <img src="logo.png" className='w-24' alt="" />
+                        <h2 className='capitalize font-bold'>the daily task</h2>
                     </div>
                     <div className="">
                         <Tasks click={setCart} cart={cart}></Tasks>

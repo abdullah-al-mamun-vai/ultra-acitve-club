@@ -22,7 +22,7 @@ const Intro = ({ cart }) => {
     const handleSweet = () => {
         Swal.fire(
             'Good job!',
-            'You clicked the button!',
+            'You complete your work!',
             'success'
         );
     }
@@ -34,27 +34,27 @@ const Intro = ({ cart }) => {
             </div>
             <div className='flex justify-evenly bg-slate-400 rounded-md m-4 p-4'>
                 <div>
-                    <h1><span className='font-bold lg:text-xl md:text-lg sm:text-xl'>56</span>kg</h1>
-                    <p>Weight</p>
+                    <h1 className='text-white'><span className='font-bold lg:text-xl md:text-lg sm:text-xl'>56</span>kg</h1>
+                    <p className='text-white'>Weight</p>
                 </div>
                 <div>
-                    <h1 className='font-bold lg:text-xl md:text-lg sm:text-xl'>5.7</h1>
-                    <p>height</p>
+                    <h1 className='text-white font-bold lg:text-xl md:text-lg sm:text-xl'>5.7</h1>
+                    <p className='text-white'>height</p>
                 </div>
                 <div>
-                    <h1><span className='font-bold lg:text-xl md:text-lg sm:text-xl'>22</span>yr</h1>
-                    <p>age</p>
+                    <h1 className='text-white'><span className='font-bold lg:text-xl md:text-lg sm:text-xl'>22</span>yr</h1>
+                    <p className='text-white'>age</p>
                 </div>
             </div>
             <div>
                 <h2 className='capitalize text-xl font-bold mx-4 my-8'>add a break</h2>
                 <div>
                     <div className='flex justify-evenly bg-slate-400 rounded-md py-3 mx-2'>
-                        <button onClick={() => handleBreak(10)} className='rounded-full focus:bg-slate-600 rounded-full p-2 text-white'>10s</button>
-                        <button onClick={() => handleBreak(20)} className='rounded-full focus:bg-slate-600 rounded-full p-2 text-white'>20s</button>
-                        <button onClick={() => handleBreak(30)} className='rounded-full focus:bg-slate-600 rounded-full p-2 text-white'>30s</button>
-                        <button onClick={() => handleBreak(40)} className='rounded-full focus:bg-slate-600 rounded-full p-2 text-white'>40s</button>
-                        <button onClick={() => handleBreak(50)} className='rounded-full focus:bg-slate-600 rounded-full p-2 text-white'>50s</button>
+                        <button onClick={() => handleBreak(10)} className='rounded-full focus:bg-slate-600 rounded-full p-2 text-white'>10m</button>
+                        <button onClick={() => handleBreak(20)} className='rounded-full focus:bg-slate-600 rounded-full p-2 text-white'>20m</button>
+                        <button onClick={() => handleBreak(30)} className='rounded-full focus:bg-slate-600 rounded-full p-2 text-white'>30m</button>
+                        <button onClick={() => handleBreak(40)} className='rounded-full focus:bg-slate-600 rounded-full p-2 text-white'>40m</button>
+                        <button onClick={() => handleBreak(50)} className='rounded-full focus:bg-slate-600 rounded-full p-2 text-white'>50m</button>
                     </div>
                 </div>
             </div>
@@ -62,11 +62,11 @@ const Intro = ({ cart }) => {
                 <h2 className='capitalize text-xl font-bold mx-4 my-8'>exercise details</h2>
                 <div className='flex justify-evenly bg-amber-100 py-4 mt-8'>
                     <h3 className='text-lg font-semibold capitalize'>exercise time</h3>
-                    <p className='text-slate-600'>{cart}s</p>
+                    <p className='text-slate-600'>{cart}m</p>
                 </div>
                 <div className='flex justify-evenly bg-amber-100 py-4 mt-8'>
                     <h3 className='text-lg font-semibold capitalize'>break time</h3>
-                    <p className='text-slate-600'>{relaxtime}s</p>
+                    <p className='text-slate-600'>{relaxtime}m</p>
                 </div>
             </div>
             <div>
