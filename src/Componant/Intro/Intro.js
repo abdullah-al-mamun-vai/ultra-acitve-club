@@ -27,22 +27,22 @@ const Intro = ({ cart }) => {
         );
     }
     return (
-        <div className='sticky top-0 mx-2'>
+        <div className='sticky top-0 mx-2 py-3'>
             <div>
-                <h2 className='capitalize text-2xl font-bold'>abdullah al mamun</h2>
+                <h2 className='capitalize lg:text-2xl md:text-lg font-bold'>abdullah al mamun</h2>
                 <p>Frond end developer</p>
             </div>
             <div className='flex justify-evenly bg-slate-400 rounded-md m-4 p-4'>
                 <div>
-                    <h1><span className='font-bold text-xl'>56</span>kg</h1>
+                    <h1><span className='font-bold lg:text-xl md:text-lg sm:text-xl'>56</span>kg</h1>
                     <p>Weight</p>
                 </div>
                 <div>
-                    <h1 className='font-bold text-xl'>5.7</h1>
+                    <h1 className='font-bold lg:text-xl md:text-lg sm:text-xl'>5.7</h1>
                     <p>height</p>
                 </div>
                 <div>
-                    <h1><span className='font-bold text-xl'>22</span>yr</h1>
+                    <h1><span className='font-bold lg:text-xl md:text-lg sm:text-xl'>22</span>yr</h1>
                     <p>age</p>
                 </div>
             </div>
@@ -64,7 +64,7 @@ const Intro = ({ cart }) => {
                     <h3 className='text-lg font-semibold capitalize'>exercise time</h3>
                     <p className='text-slate-600'>{cart}s</p>
                 </div>
-                <div className='flex justify-evenly bg-amber-100 py-4'>
+                <div className='flex justify-evenly bg-amber-100 py-4 mt-8'>
                     <h3 className='text-lg font-semibold capitalize'>break time</h3>
                     <p className='text-slate-600'>{relaxtime}s</p>
                 </div>

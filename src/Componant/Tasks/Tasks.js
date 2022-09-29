@@ -10,7 +10,7 @@ const Tasks = ({ click, cart }) => {
     }, [])
 
     return (
-        <div className=' grid grid-cols-3 gap-3 md:grid-cols-2 sm:grid-cols-1'>
+        <div className=' grid lg:grid-cols-3 gap-3 md:grid-cols-2 sm:grid-cols-1'>
             {tasks.map(task => <Task task={task} key={task.id} setCart={click} cart={cart}></Task>)}
         </div>
     );
