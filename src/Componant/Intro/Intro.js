@@ -1,19 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import Swal from 'sweetalert2'
+
 
 const Intro = ({ cart }) => {
-    let [relax, setRelax] = useState(0);
+    const [relax, setRelax] = useState(0);
+    const [relaxtime, setRelaxTime] = useState(0)
     const handleBreak = (second) => {
+        // const newTime = second;
         setRelax(second);
-        // const getItem = localStorage.getItem('break');
+        localStorage.setItem('break', JSON.stringify(second))
     }
 
-    if (relax) {
-        localStorage.setItem('break', relax)
+    useEffect(() => {
 
+        const getTime = localStorage.getItem('break');
+        if (getTime) {
+            setRelaxTime(JSON.parse(getTime))
+        }
+
+    }, [relax]);
+    const handleSweet = () => {
+        Swal.fire(
+            'Good job!',
+            'You clicked the button!',
+            'success'
+        );
     }
-    relax = localStorage.getItem('break');
-    // setGet(getItem)
-
     return (
         <div className='sticky top-0 mx-2'>
             <div>
@@ -54,10 +66,15 @@ const Intro = ({ cart }) => {
                 </div>
                 <div className='flex justify-evenly bg-amber-100 py-4'>
                     <h3 className='text-lg font-semibold capitalize'>break time</h3>
-                    <p className='text-slate-600'>{relax}s</p>
+                    <p className='text-slate-600'>{relaxtime}s</p>
                 </div>
             </div>
-            <button className='btn w-full bg-green-500 my-8'>activity complete</button>
+            <div>
+                <button onClick={handleSweet} className='btn w-full bg-green-500 my-8'>activity complete</button>
+
+            </div>
+
+
         </div>
     );
 };

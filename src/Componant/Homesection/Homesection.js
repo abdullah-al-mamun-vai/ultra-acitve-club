@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Intro from '../Intro/Intro';
 import Tasks from '../Tasks/Tasks';
 
+
 const Homesection = () => {
     const [cart, setCart] = useState(0);
 
